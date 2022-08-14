@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" class="text-white font-poppins">
+<html lang="en" class="wh-full text-white font-poppins bg-color selection:bg-color-transparent selection:text-gray-400">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xae</title>
   </head>
-  <body class="h-screen relative bg-gradient-to-br from-background-from to-background-to">
-    <div class="h-full bg-background bg-no-repeat bg-size bg-position xs:bg-position-xs sm:bg-position-sm md:bg-size-md">
-      <aside class="hidden">
-        <a href="#">
-          <h1>Xae</h1>
-        </a>
+  <body class="min-wh-full flex bg-gradient overflow-hidden">
+    <div class="flex bg-img">
+      <aside class="hidden flex-col px-4 py-6 border-r border-r-white lg:flex">
+        <div class="flex flex-1">
+          <a class="btn" href="#">
+            <h1 class="text-5xl font-bold">Xae</h1>
+          </a>
+        </div>
 
-        <div>
-          <a href="#">
-            <i class="ph-facebook-logo"></i>
-            <i class="ph-instagram-logo"></i>
-            <i class="ph-twitter-logo"></i>
+        <div class="flex flex-col items-center gap-2">
+          <a class="btn" href="#">
+            <i class="ph-facebook-logo ph-2x"></i>
+          </a>
+          <a class="btn" href="#">
+            <i class="ph-instagram-logo ph-2x"></i>
+          </a>
+          <a class="btn" href="#">
+            <i class="ph-twitter-logo ph-2x"></i>
           </a>
         </div>
       </aside>
 
-      <div class="flex flex-col justify-between h-full gap-12">
-        <header class="flex items-center justify-between w-full p-4">
-          <a class="btn" href="#">
-            <h1 class="text-5xl font-bold">Xae</h1>
-          </a>
+      <div class="wh-full flex flex-col">
+        <header class="flex items-center p-4">
+          <div class="flex flex-1">
+            <a class="btn lg:hidden" href="#">
+              <h1 class="text-5xl font-bold">Xae</h1>
+            </a>
+          </div>
 
           <div class="relative">
             <input class="absolute z-[-1] opacity-0" type="checkbox" name="header-menu-check" />
 
-            <label class="flex btn" for="header-menu-check">
-              <i class="ph-list ph-2x"></i>
+            <label class="btn" for="header-menu-check">
+              <i class="ph-list text-[2.5rem]"></i>
             </label>
 
             <ul class="hidden">
@@ -46,32 +54,35 @@
           </div>
         </header>
 
-        <main class="flex flex-col justify-end w-full h-full px-6">
-          <div class="flex flex-col w-min gap-4">
-            <h1 class="text-5xl leading-tight md:text-7xl md:leading-snug font-bold w-min">Adventure Together</h1>
+        <main class="wh-full flex flex-col justify-end px-6 lg:px-24 lg:justify-center">
+          <div class="w-min flex flex-col gap-4 lg:w-1/2">
+            <h1 class="h1 w-min">Adventure Together</h1>
             <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id potenti faucibus nec, rhoncus, vulputate vitae. Dictum rutrum ut cras nullam porta id dolor arcu, quis.</p>
           </div>
         </main>
 
-        <footer class="flex items-center max-h-[20vh] px-6 mb-16 gap-6 relative bg-black/50">
-          <img class="max-h-full" src="/assets/man-in-the-moon.png" alt="An astronaut on the moon next to a USA flag." />
-
-          <div class="flex flex-col w-max xs:w-max gap-2">
-            <h3 class="h3">Exploration</h3>
-            <p class="p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <span class="hidden lg:block"> Placerat id potenti faucibus nec, rhoncus, vulputate </span>
-            </p>
+        <footer class="w-full flex items-center my-16 px-6 gap-6 bg-black/40 backdrop-blur-md lg:my-0 lg:px-24">
+          <div>
+            <img src="/assets/man-in-the-moon.png" alt="An astronaut on the moon next to a USA flag." />
           </div>
 
-          <div class="btn absolute right-2 bottom-2">
-            <i class="ph-arrow-bend-down-right md:hidden"></i>
-            <i class="hidden ph-arrow-bend-down-right ph-xl md:inline-flex"></i>
-          </div>
+          <div class="flex gap-6 my-6">
+            <div class="w-min flex flex-col gap-2 relative xs:w-fit">
+              <h3 class="h3">Exploration</h3>
+              <p class="p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span class="hidden lg:block"> Placerat id potenti faucibus nec, rhoncus, vulputate </span>
+              </p>
 
-          <div class="hidden xs:flex flex-col w-max gap-2">
-            <h3 class="h3">Footprint</h3>
-            <p class="p">Lorem ipsum dolor sit amet, consectetur</p>
+              <div class="btn p-1 absolute -right-5 -bottom-6 md:-right-3 md:-bottom-4">
+                <i class="text-5xl leading-6">&#8640;&nbsp;</i>
+              </div>
+            </div>
+
+            <div class="w-fit hidden flex-col gap-2 xs:flex">
+              <h3 class="h3">Footprint</h3>
+              <p class="p">Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
           </div>
         </footer>
       </div>

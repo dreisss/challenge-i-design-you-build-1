@@ -3,15 +3,33 @@
 @tailwind utilities;
 
 @layer components {
-  .btn {
-    @apply flex p-2 rounded transition hover:bg-white/5 active:scale-90;
+  .bg-img {
+    @apply bg-no-repeat bg-image bg-size bg-position xs:bg-position-xs md:bg-size-md md:bg-position-md lg:bg-size-lg lg:bg-position-lg;
   }
 
-  .p {
-    @apply text-xs font-medium md:text-lg;
+  .btn {
+    @apply flex h-min p-2 rounded-lg cursor-pointer transition hover:bg-white/10 active:scale-90;
+  }
+
+  .h1 {
+    @apply text-5xl font-bold leading-tight md:text-7xl;
   }
 
   .h3 {
-    @apply font-bold leading-6 md:text-2xl;
+    @apply text-base font-bold md:text-2xl;
+  }
+
+  .p {
+    @apply text-xs font-medium leading-relaxed md:text-lg;
+  }
+}
+
+@layer utilities {
+  .wh-full {
+    @apply w-full h-full;
+  }
+
+  .min-wh-full {
+    @apply min-w-full min-h-full;
   }
 }
