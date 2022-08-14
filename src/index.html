@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-white font-poppins">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xae</title>
   </head>
-  <body>
+  <body class="h-screen relative bg-gradient-to-r from-background-from to-background-to">
+    <div class="h-full bg-background bg-no-repeat bg-size bg-position">
+      <aside class="hidden">
+        <a href="#">
+          <h1>Xae</h1>
+        </a>
+
+        <div>
+          <a href="#">
+            <i class="ph-facebook-logo"></i>
+            <i class="ph-instagram-logo"></i>
+            <i class="ph-twitter-logo"></i>
+          </a>
+        </div>
+      </aside>
+
+      <div class="flex flex-col justify-between h-full gap-12">
+        <header class="flex items-center justify-between w-full p-4">
+          <a class="btn" href="#">
+            <h1 class="text-5xl font-bold">Xae</h1>
+          </a>
+
+          <div class="relative">
+            <input class="absolute z-[-1] opacity-0" type="checkbox" name="header-menu-check" />
+
+            <label class="flex btn" for="header-menu-check">
+              <i class="ph-list ph-2x"></i>
+            </label>
+
+            <ul class="hidden">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+                <div><i class="ph-sun"></i></div>
+              </li>
+            </ul>
+          </div>
+        </header>
+
+        <main class="flex flex-col justify-end w-full h-full px-6">
+          <div class="flex flex-col w-min gap-4">
+            <h1 class="text-5xl leading-tight font-bold w-min">Adventure Together</h1>
+            <p class="text-xs font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id potenti faucibus nec, rhoncus, vulputate vitae. Dictum rutrum ut cras nullam porta id dolor arcu, quis.</p>
+          </div>
+        </main>
+
+        <footer class="flex items-center px-6 mb-16 gap-6 relative bg-black/50">
+          <img class="w-2/3" src="/assets/man-in-the-moon.png" alt="An astronaut on the moon next to a USA flag." />
+
+          <div class="flex flex-col w-min gap-2">
+            <h3 class="w-min font-bold leading-6">Exploration</h3>
+            <p class="text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <span class="hidden"> Placerat id potenti faucibus nec, rhoncus, vulputate </span>
+            </p>
+          </div>
+
+          <div class="btn absolute right-2 bottom-2">
+            <i class="ph-arrow-bend-down-right"></i>
+          </div>
+
+          <div class="hidden">
+            <h3 class="font-bold leading-6">Footprint</h3>
+            <p class="text-xs">Lorem ipsum dolor sit amet, consectetur</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
     <script type="module" src="./ts/main.ts"></script>
   </body>
 </html>

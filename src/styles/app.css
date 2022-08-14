@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply flex p-2 rounded transition hover:bg-white/5 active:scale-90;
+  }
+}
