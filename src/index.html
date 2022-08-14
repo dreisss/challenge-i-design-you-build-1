@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-white font-poppins">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xae</title>
   </head>
-  <body>
-    <div>
-      <aside>
+  <body class="h-screen relative bg-gradient-to-r from-background-from to-background-to">
+    <div class="h-full bg-background bg-no-repeat bg-size bg-position bg-[]">
+      <aside class="hidden">
         <a href="#">
           <h1>Xae</h1>
         </a>
@@ -21,20 +21,20 @@
         </div>
       </aside>
 
-      <div>
-        <header>
-          <a href="#">
-            <h1>Xae</h1>
+      <div class="flex flex-col justify-between h-full gap-12">
+        <header class="flex items-center justify-between w-full p-4">
+          <a class="btn" href="#">
+            <h1 class="text-5xl font-bold">Xae</h1>
           </a>
 
-          <div>
-            <input type="checkbox" name="header-menu-check" />
+          <div class="relative">
+            <input class="absolute z-[-1] opacity-0" type="checkbox" name="header-menu-check" />
 
-            <label for="header-menu-check">
-              <i class="ph-list"></i>
+            <label class="flex btn" for="header-menu-check">
+              <i class="ph-list ph-2x"></i>
             </label>
 
-            <ul>
+            <ul class="hidden">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Gallery</a></li>
@@ -46,36 +46,31 @@
           </div>
         </header>
 
-        <main>
-          <h1>Adventure Together</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id
-            potenti faucibus nec, rhoncus, vulputate vitae. Dictum rutrum ut
-            cras nullam porta id dolor arcu, quis.
-          </p>
+        <main class="flex flex-col justify-end w-full h-full px-6">
+          <div class="flex flex-col w-min gap-4">
+            <h1 class="text-5xl leading-tight font-bold w-min">Adventure Together</h1>
+            <p class="text-xs font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id potenti faucibus nec, rhoncus, vulputate vitae. Dictum rutrum ut cras nullam porta id dolor arcu, quis.</p>
+          </div>
         </main>
 
-        <footer>
-          <img
-            src="/assets/man-in-the-moon.png"
-            alt="An astronaut on the moon next to a USA flag."
-          />
+        <footer class="flex items-center px-6 mb-16 gap-6 relative bg-black/50">
+          <img class="w-2/3" src="/assets/man-in-the-moon.png" alt="An astronaut on the moon next to a USA flag." />
 
-          <div>
-            <h3>Exploration</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat
-              id potenti faucibus nec, rhoncus, vulputate
+          <div class="flex flex-col w-min gap-2">
+            <h3 class="w-min font-bold leading-6">Exploration</h3>
+            <p class="text-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <span class="hidden"> Placerat id potenti faucibus nec, rhoncus, vulputate </span>
             </p>
           </div>
 
-          <div>
+          <div class="btn absolute right-2 bottom-2">
             <i class="ph-arrow-bend-down-right"></i>
           </div>
 
-          <div>
-            <h3>Footprint</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur</p>
+          <div class="hidden">
+            <h3 class="font-bold leading-6">Footprint</h3>
+            <p class="text-xs">Lorem ipsum dolor sit amet, consectetur</p>
           </div>
         </footer>
       </div>
