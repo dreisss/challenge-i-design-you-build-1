@@ -6,4 +6,12 @@
   .btn {
     @apply flex p-2 rounded transition hover:bg-white/5 active:scale-90;
   }
+
+  .p {
+    @apply text-xs font-medium md:text-lg;
+  }
+
+  .h3 {
+    @apply font-bold leading-6 md:text-2xl;
+  }
 }

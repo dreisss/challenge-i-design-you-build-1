@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Xae</title>
   </head>
-  <body class="h-screen relative bg-gradient-to-r from-background-from to-background-to">
-    <div class="h-full bg-background bg-no-repeat bg-size bg-position">
+  <body class="h-screen relative bg-gradient-to-br from-background-from to-background-to">
+    <div class="h-full bg-background bg-no-repeat bg-size bg-position xs:bg-position-xs sm:bg-position-sm md:bg-size-md">
       <aside class="hidden">
         <a href="#">
           <h1>Xae</h1>
@@ -48,29 +48,30 @@
 
         <main class="flex flex-col justify-end w-full h-full px-6">
           <div class="flex flex-col w-min gap-4">
-            <h1 class="text-5xl leading-tight font-bold w-min">Adventure Together</h1>
-            <p class="text-xs font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id potenti faucibus nec, rhoncus, vulputate vitae. Dictum rutrum ut cras nullam porta id dolor arcu, quis.</p>
+            <h1 class="text-5xl leading-tight md:text-7xl md:leading-snug font-bold w-min">Adventure Together</h1>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id potenti faucibus nec, rhoncus, vulputate vitae. Dictum rutrum ut cras nullam porta id dolor arcu, quis.</p>
           </div>
         </main>
 
-        <footer class="flex items-center px-6 mb-16 gap-6 relative bg-black/50">
-          <img class="w-2/3" src="/assets/man-in-the-moon.png" alt="An astronaut on the moon next to a USA flag." />
+        <footer class="flex items-center max-h-[20vh] px-6 mb-16 gap-6 relative bg-black/50">
+          <img class="max-h-full" src="/assets/man-in-the-moon.png" alt="An astronaut on the moon next to a USA flag." />
 
-          <div class="flex flex-col w-min gap-2">
-            <h3 class="w-min font-bold leading-6">Exploration</h3>
-            <p class="text-xs">
+          <div class="flex flex-col w-max xs:w-max gap-2">
+            <h3 class="h3">Exploration</h3>
+            <p class="p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <span class="hidden"> Placerat id potenti faucibus nec, rhoncus, vulputate </span>
+              <span class="hidden lg:block"> Placerat id potenti faucibus nec, rhoncus, vulputate </span>
             </p>
           </div>
 
           <div class="btn absolute right-2 bottom-2">
-            <i class="ph-arrow-bend-down-right"></i>
+            <i class="ph-arrow-bend-down-right md:hidden"></i>
+            <i class="hidden ph-arrow-bend-down-right ph-xl md:inline-flex"></i>
           </div>
 
-          <div class="hidden">
-            <h3 class="font-bold leading-6">Footprint</h3>
-            <p class="text-xs">Lorem ipsum dolor sit amet, consectetur</p>
+          <div class="hidden xs:flex flex-col w-max gap-2">
+            <h3 class="h3">Footprint</h3>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur</p>
           </div>
         </footer>
       </div>

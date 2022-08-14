@@ -18,10 +18,17 @@ module.exports = {
 
       backgroundSize: {
         size: "auto 50%",
+        "size-md": "auto 60%",
       },
 
       backgroundPosition: {
         position: "right -60vw top 9rem",
+        "position-xs": "right -40vw top 9rem",
+        "position-sm": "right -20vw top 9rem",
+      },
+
+      screens: {
+        xs: "510px",
       },
     },
   },
