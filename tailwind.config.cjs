@@ -2,26 +2,38 @@
 module.exports = {
   content: ["./src/index.html"],
   theme: {
-    extend: {
-      colors: {
-        "background-from": "#2C4550",
-        "background-to": "#0C0C0C",
-      },
+    screens: {
+      xs: "480px",
+      md: "768px",
+      lg: "1024px",
+    },
 
+    extend: {
       fontFamily: {
         poppins: ["'Poppins'", "sans-serif"],
       },
 
+      colors: {
+        color: "#2C4550",
+        "color-transparent": "#2C4550aa",
+      },
+
       backgroundImage: {
-        background: "url('/assets/background.png')",
+        gradient: "linear-gradient(to bottom right, #2C4550, #0C0C0C)",
+        image: "url('/assets/background.png')",
       },
 
       backgroundSize: {
-        size: "auto 50%",
+        size: "auto 45%",
+        "size-md": "auto 65%",
+        "size-lg": "auto 100%",
       },
 
       backgroundPosition: {
-        position: "right -60vw top 9rem",
+        position: "left -20% top 30%",
+        "position-xs": "right -6rem top 30%",
+        "position-md": "right -12rem top 30%",
+        "position-lg": "right -11rem top",
       },
     },
   },

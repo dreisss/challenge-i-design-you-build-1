@@ -3,7 +3,65 @@
 @tailwind utilities;
 
 @layer components {
+  .bg-img {
+    @apply bg-no-repeat bg-image bg-size bg-position xs:bg-position-xs md:bg-size-md md:bg-position-md lg:bg-size-lg lg:bg-position-lg;
+  }
+
   .btn {
-    @apply flex p-2 rounded transition hover:bg-white/5 active:scale-90;
+    @apply flex h-min p-2 rounded-lg cursor-pointer transition hover:bg-white/10 active:scale-90;
+  }
+
+  .h1 {
+    @apply text-5xl font-bold leading-tight md:text-7xl;
+  }
+
+  .h3 {
+    @apply text-base font-bold md:text-2xl;
+  }
+
+  .p {
+    @apply text-xs font-medium leading-relaxed md:text-lg;
+  }
+
+  .dropdown {
+    @apply relative;
+  }
+
+  .dropdown-check {
+    @apply absolute z-[-1] opacity-0;
+  }
+
+  .dropdown-check:checked ~ .dropdown-content {
+    @apply flex animate-[show-dropdown-content_0.2s_ease-in];
+  }
+
+  .dropdown-btn {
+  }
+
+  .dropdown-content {
+    @apply hidden flex-col rounded-lg px-6 py-4 absolute top-16 right-0 select-none border border-color bg-color-transparent backdrop-blur-sm;
+  }
+
+  .dropdown-item-btn {
+    @apply justify-center text-xl;
+  }
+}
+
+@layer utilities {
+  .wh-full {
+    @apply w-full h-full;
+  }
+
+  .min-wh-full {
+    @apply min-w-full min-h-full;
+  }
+}
+
+@keyframes show-dropdown-content {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
