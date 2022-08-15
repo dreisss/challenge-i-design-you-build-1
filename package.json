@@ -1,7 +1,7 @@
 {
   "name": "challenge-i-design-you-build-1",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "postinstall": "husky install",
