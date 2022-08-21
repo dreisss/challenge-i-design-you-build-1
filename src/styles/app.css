@@ -57,6 +57,10 @@
   }
 }
 
+[class^="ph-"] {
+  display: flex;
+}
+
 @keyframes show-dropdown-content {
   from {
     opacity: 0;
