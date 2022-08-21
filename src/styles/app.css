@@ -28,7 +28,7 @@
   }
 
   .dropdown-check {
-    @apply absolute z-[-1] opacity-0;
+    @apply absolute z-[-1] opacity-0 lg:hidden;
   }
 
   .dropdown-check:focus-visible ~ .dropdown-btn {
@@ -40,10 +40,11 @@
   }
 
   .dropdown-btn {
+    @apply lg:hidden;
   }
 
   .dropdown-content {
-    @apply hidden flex-col rounded-lg px-6 py-4 absolute top-16 right-0 select-none border border-color bg-color-transparent backdrop-blur-sm;
+    @apply hidden flex-col rounded-lg px-6 py-4 absolute top-16 right-0 select-none border border-color bg-color-transparent backdrop-blur-sm lg:flex lg:flex-row lg:bg-transparent lg:border-none lg:top-0 lg:gap-8;
   }
 
   .dropdown-content li > * {
@@ -51,7 +52,11 @@
   }
 
   .dropdown-item-btn {
-    @apply justify-center text-xl;
+    @apply justify-center text-xl lg:px-1 lg:rounded-none;
+  }
+
+  .dropdown-item-btn-selected {
+    @apply lg:border-b-2;
   }
 }
 
