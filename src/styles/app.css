@@ -31,6 +31,10 @@
     @apply absolute z-[-1] opacity-0;
   }
 
+  .dropdown-check:focus-visible ~ .dropdown-btn {
+    @apply ring;
+  }
+
   .dropdown-check:checked ~ .dropdown-content {
     @apply flex animate-[show-dropdown-content_0.2s_ease-in];
   }
@@ -40,6 +44,10 @@
 
   .dropdown-content {
     @apply hidden flex-col rounded-lg px-6 py-4 absolute top-16 right-0 select-none border border-color bg-color-transparent backdrop-blur-sm;
+  }
+
+  .dropdown-content li > * {
+    @apply w-full;
   }
 
   .dropdown-item-btn {
@@ -55,6 +63,10 @@
   .min-wh-full {
     @apply min-w-full min-h-full;
   }
+}
+
+*:focus {
+  @apply outline-none ring;
 }
 
 [class^="ph-"] {
