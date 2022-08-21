@@ -1,28 +1,50 @@
-[**#idesignyoubuild**]: https://dev.to/zernonia/i-design-you-build-frontend-challenge-1-158a
-[**zernonia**]: https://dev.to/zernonia
-[**here**]: https://dev.to/zernonia/i-design-you-build-frontend-challenge-1-158a
-
-# [**Challenge: I Design, You Build! #1**]()
-
-<br>
+# [**Challenge: Commune Waitlist Page**](#challenge-commune-waitlist-page)
 
 <div align="center">
   <a target="_blank" href="https://dev.to/zernonia/i-design-you-build-frontend-challenge-1-158a">
-    <img width="80%" src="https://res.cloudinary.com/practicaldev/image/fetch/s--hevQhRsY--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/akqho6affec7298p6hu7.png">
+    <img width="70%" src="./design/Desktop View.png">
+    <img width="18.2%" src="./design/Mobile View.png">
   </a>
 </div>
 
-<br>
+## [**Description**](#description)
 
-> Awesome Gradient, 3D Space design with different kind of Design Flavor. Create a homepage following the design.
+Solving a frontend challenge from [**#idesignyoubuild**], some challenges created
+by [**zernonia**] in the DEV Community.
 
----
+To see more details about this challenge click [**here**]. And to see the preview
+of the project, follow the [**link**].
 
-Challenge from [**#idesignyoubuild**] challenges created by [**Zernonia**] in the DEV Community. Access this challenge details
-[**here**].
+## [**Used tools/technologies**](#used-toolstechnologies)
 
-**Used tools/technologies**:
+As I did this challenge just to remember and save a "vanilla project", i chose
+the simplest stack possible. See below:
 
-- _`HTML, Tailwind CSS & basic Typescript`_
-- _`Phosphor icons`_
-- _`Vite`_
+- [**_`Vite`_**] [<img height="24px" align="center" src="https://vitejs.dev/logo-with-shadow.png"/>]
+  | Used to manage a basic development setup
+
+- [**_`HTML`_**] **&** [**_`Tailwind CSS`_**]
+  [<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>]
+  [<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"/>]
+  | To style the page
+
+- [**_`Typescript`_**] [<img height="22px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>]
+  | Used to manage events and handle assets (with vite support)
+
+- [**_`Phosphor Icons`_**] [<img height="22px" align="center" src="https://github.com/phosphor-icons/phosphor-home/raw/master/meta/phosphor-mark-tight-yellow.png"/>]
+  | Icons used in the page
+
+[**#idesignyoubuild**]: https://dev.to/zernonia/i-design-you-build-frontend-challenge-1-158a
+[**here**]: https://dev.to/zernonia/i-design-you-build-frontend-challenge-1-158a
+[**zernonia**]: https://dev.to/zernonia
+[**link**]: https://dreisss.github.io/challenge-i-design-you-build-1/
+[**_`vite`_**]: https://vitejs.dev
+[<img height="24px" align="center" src="https://vitejs.dev/logo-with-shadow.png"/>]: https://vitejs.dev
+[**_`html`_**]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[**_`tailwind css`_**]: https://tailwindcss.com
+[<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"/>]: https://tailwindcss.com
+[**_`typescript`_**]: https://www.typescriptlang.org
+[<img height="22px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>]: https://www.typescriptlang.org
+[**_`phosphor icons`_**]: https://phosphoricons.com
+[<img height="22px" align="center" src="https://github.com/phosphor-icons/phosphor-home/raw/master/meta/phosphor-mark-tight-yellow.png"/>]: https://phosphoricons.com
